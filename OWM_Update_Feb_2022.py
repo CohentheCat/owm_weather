@@ -1,4 +1,3 @@
-from calendar import month
 import pyowm
 import time
 import datetime
