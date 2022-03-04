@@ -1,9 +1,10 @@
 import pyowm
 import time
 import datetime
+import OWM_keys
 
 clock = time.asctime()
-owm = pyowm.OWM('0c3990a2a587901c24d0f0b229f05758')
+owm = pyowm.OWM(OWM_keys.ApiKey)
 mgr = owm.weather_manager()
 three_hr_forecast = mgr.forecast_at_place("Frewville, AU", "3h").forecast
 list_of_weather_objects = []
